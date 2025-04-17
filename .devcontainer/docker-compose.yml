@@ -9,7 +9,7 @@ services:
       # Use the current directory (.devcontainer) as the build context
       context: .
       # Specify the Dockerfile within the build context
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.devmachine
 
     # Define volumes to mount
     volumes:
