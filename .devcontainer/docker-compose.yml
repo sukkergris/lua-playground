@@ -25,7 +25,7 @@ services:
       # Mount the project's nvim config into the root user's config dir
       # Source: ./.config/nvim (relative to this docker-compose.yml file)
       # Target: /root/.config/nvim (where nvim looks when run as root)
-      - ./.config/nvim:/root/.config/nvim:cached
+      # - ./.config/nvim:/root/.config/nvim:cached
     # Command to run when the container starts.
     # 'sleep infinity' keeps the container running indefinitely so VS Code can attach.
     command: sleep infinity
