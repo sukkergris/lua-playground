@@ -24,10 +24,14 @@ RUN apk update && apk add --no-cache \
     unzip \
     tree \
     stow \
-    lua5.4 \
     neovim \
     neovim-doc \
+    lua5.4 \
+    luarocks \
+    lua-dev \
+    libc-dev \
     lua-language-server \
+    xclip \
     && rm -rf /var/cache/apk/*
 
 # Optional: Set bash as the default command for new terminals started within the container.
