@@ -37,3 +37,16 @@ vim.opt.path:append("**/.devcontainer/**") -- Also recursively search within the
 
 -- Make sure this file is loaded by your main init.lua, for example using:
 -- require('core.options') -- if saved as lua/core/options.lua
+
+
+vim.opt.list = true
+-- vim.o.listchars = "tab:»\\ ,space:·" --:set list!
+vim.g.editorconfig = true -- Explicitly enable built-in EditorConfig support
+vim.opt.listchars = {
+    tab = ">-",
+    trail = "~",
+    extends = ">",
+    precedes = "<",
+    nbsp = "%",
+    space = "·"  -- Use a centered dot for spaces
+  }

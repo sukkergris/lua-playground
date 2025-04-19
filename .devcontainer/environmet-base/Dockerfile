@@ -12,17 +12,20 @@ FROM alpine:3.21.3
 # lua5.4: Lua interpreter (check available version if needed, e.g., 'apk search lua')
 # neovim: Neovim editor
 # lua-language-server: The LSP (often in the 'community' repo, usually enabled by default)
-RUN apk update && apk add --no-cache \
+RUn apk update && apk add --no-cache \
     ca-certificates \
     bash \
     git \
     build-base \
     wget \
     curl \
+    tree \
     unzip \
+    stow \
     tar \
     lua5.4 \
     neovim \
+    neovim-doc \
     lua-language-server \
  && rm -rf /var/cache/apk/*
 
